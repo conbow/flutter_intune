@@ -10,4 +10,8 @@ class FlutterIntune {
     final String? version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
+
+  static Future<String?> showDiagnostics() async {
+    return await _channel.invokeMethod('showDiagnostics');
+  }
 }
