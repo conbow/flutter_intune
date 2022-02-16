@@ -8,6 +8,9 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:4.1.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        classpath "org.javassist:javassist:3.22.0-GA"
+        classpath files("app/libs/com.microsoft.intune.mam.build.jar")
     }
 }
 
